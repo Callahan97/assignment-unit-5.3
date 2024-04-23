@@ -40,6 +40,25 @@ function showCollection(collection) {
 
 showCollection(myCollection);
 
+function findByArtist(collection, artist) {
+let matchingArtists = [];
+
+for (let i = 0; i<collection.length; i++) {
+  let album =collection[i];
+  if(album.artist === artist){
+    matchingArtists.push(album);
+    }
+  }
+
+return matchingArtists;{
+
+}
+};
+
+// dont know what is expected to use for a test so i just wrote this in
+
+console.log(findByArtist(myCollection, "DR.GABBA"));
+
 
 
 
