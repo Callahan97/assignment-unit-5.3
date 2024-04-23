@@ -6,7 +6,7 @@ myCollection = [];
 function addToCollection(collection, title, artist, yearPublished){
 const newAlbum = {
   title: title,
-  artiist: artist,
+  artist: artist,
   yearPublished: yearPublished
 };
 
@@ -22,9 +22,27 @@ let albumFour = addToCollection(myCollection, "The Richest Man In Babylon", "Thi
 let albumFive = addToCollection(myCollection, "Brasilian Skies", "Masayoshi Takanaka", "1978");
 let albumSix = addToCollection(myCollection, "2", "Mac Demarco", "2012");
 
-
+console.log(albumOne);
+console.log(albumTwo);
+console.log(albumThree);
+console.log(albumFour);
+console.log(albumFive);
+console.log(albumSix);
 
 console.log(myCollection);
+
+function showCollection(collection) {
+  for(let i = 0; i < collection.length; i++){
+    const album = collection[i];
+    console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
+  }
+};
+
+showCollection(myCollection);
+
+
+
+
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
